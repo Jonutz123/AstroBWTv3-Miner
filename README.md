@@ -75,7 +75,7 @@ You need this program only if you want to mine to a node.
 This is how to setup the proxy (linux version, for windows is the same):
 ````bash
 #Download the proxy server
-#If you want to miner to your own node then download this on the node server for best results !!!
+#If you want to mine to your own node then download this on the node server for best results !!!
 curl -L https://github.com/Jonutz123/AstroBWTv3-Miner/blob/main/deroplus_stratum_to_daemon -o deroplus_stratum_to_daemon ;
 chmod +x deroplus_stratum_to_daemon
 
