@@ -76,14 +76,14 @@ This is how to setup the proxy (linux version, for windows is the same):
 ````bash
 #Download the proxy server
 #If you want to mine to your own node then download this on the node server for best results !!!
-curl -L https://github.com/Jonutz123/AstroBWTv3-Miner/blob/main/deroplus_stratum_to_daemon -o deroplus_stratum_to_daemon ;
-chmod +x deroplus_stratum_to_daemon
+curl -L https://github.com/Jonutz123/AstroBWTv3-Miner/raw/main/deroplus_stratum_to_daemon_linux_amd64 -o deroplus_stratum_to_daemon_linux_amd64 ;
+chmod +x deroplus_stratum_to_daemon_linux_amd64
 
-#Syntax is ./deroplus_stratum_to_daemon [listening port / be carefull with portforwarding] [your node address] [your wallet]
+#Syntax is ./deroplus_stratum_to_daemon_linux_amd64 [listening port / be carefull with portforwarding] [your node address] [your wallet]
 #Example:
-./deroplus_stratum_to_daemon 1234 localhost:10100 dero1qyj4dm2ql39w4j6a3gkqu58quvkan3g4xxanrnfu92v5cl8ujjrcjqqpxf5t0  #This will start the server on port 1234 and then will redirect the traffic to localhost:10100 (which in this case is our node)
+./deroplus_stratum_to_daemon_linux_amd64 1234 localhost:10100 dero1qyj4dm2ql39w4j6a3gkqu58quvkan3g4xxanrnfu92v5cl8ujjrcjqqpxf5t0  #This will start the server on port 1234 and then will redirect the traffic to localhost:10100 (which in this case is our node)
 
-./deroplus_stratum_to_daemon 1234 1.2.3.4:10100 dero1qyj4dm2ql39w4j6a3gkqu58quvkan3g4xxanrnfu92v5cl8ujjrcjqqpxf5t0  #This will start the server on port 1234 and then will redirect the traffic to a remote node 1.2.3.4:10100
+./deroplus_stratum_to_daemon_linux_amd64 1234 1.2.3.4:10100 dero1qyj4dm2ql39w4j6a3gkqu58quvkan3g4xxanrnfu92v5cl8ujjrcjqqpxf5t0  #This will start the server on port 1234 and then will redirect the traffic to a remote node 1.2.3.4:10100
 ````
 
 ## WARNING
