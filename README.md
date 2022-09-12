@@ -88,3 +88,4 @@ chmod +x deroplus_stratum_to_daemon
 
 ## WARNING
 This miner is very new and it is in the first versions. You may encounter errors, do not hesitate to report the issues !!!
+Also, it will be nice to report the hashrate you get with this miner.
