@@ -27,7 +27,7 @@ The miner has a 10% dev fee , that means in a 100 minutes time frame 10 minutes 
 This is the easiest to use version
 ````bash
 #Download the miner
-curl -L https://github.com/Jonutz123/AstroBWTv3-Miner/blob/main/deroplus_linux_amd64 -o deroplus_linux_amd64 ;
+curl -L https://github.com/Jonutz123/AstroBWTv3-Miner/raw/main/deroplus_linux_amd64 -o deroplus_linux_amd64 ;
 chmod +x deroplus_linux_amd64 ;
 #And now there are 2 possible ways to mine
 
@@ -44,7 +44,7 @@ chmod +x deroplus_linux_amd64 ;
 
 ###### Windows
 ````bash
-curl -L https://github.com/Jonutz123/AstroBWTv3-Miner/blob/main/deroplus_windows.exe -o deroplus_windows.exe ;
+curl -L https://github.com/Jonutz123/AstroBWTv3-Miner/raw/main/deroplus_windows.exe -o deroplus_windows.exe ;
 
 #For pool mining is exactly the same with linux amd64
 
@@ -57,7 +57,7 @@ deroplus_windows.exe --ip 1.2.3.4 --port 1234 --daemon-mode ;
 
 ###### Linux ARM
 ````bash
-curl -L https://github.com/Jonutz123/AstroBWTv3-Miner/blob/main/deroplus_arm_sha -o deroplus_arm_sha ;
+curl -L https://github.com/Jonutz123/AstroBWTv3-Miner/raw/main/deroplus_arm_sha -o deroplus_arm_sha ;
 chmod +x deroplus_arm_sha
 
 #For pool mining is exactly the same with linux amd64
