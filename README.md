@@ -52,6 +52,12 @@ chmod +x deroplus_linux_amd64 ;
 #Syntax is ./deroplus_linux_amd64 --ip [node ip] --port [node port] --user [your wallet] --daemon-mode
 #Example:
 ./deroplus_linux_amd64 --ip 1.2.3.4 --port 10100 --user dero1qyj4dm2ql39w4j6a3gkqu58quvkan3g4xxanrnfu92v5cl8ujjrcjqqpxf5t0 --daemon-mode ;
+
+#For daemon/node mining variant 2
+#Go to deroplus_stratum_to_daemon usage to understand how it's working!!!
+#Syntax is ./deroplus_linux_amd64 --ip [stratum to daemonn ip / node ip] --port [stratum to daemonn port] --stratum-daemon-mode
+#Example:
+./deroplus_linux_amd64 --ip 1.2.3.4 --port 1234 --stratum-daemon-mode ;
 ````
 
 ###### Windows
@@ -62,9 +68,9 @@ curl -L https://github.com/Jonutz123/AstroBWTv3-Miner/raw/main/deroplus_windows.
 
 #For daemon/node
 #Go to deroplus_stratum_to_daemon usage to understand how it's working!!!
-#Syntax is deroplus_windows.exe --ip [stratum to daemonn ip / node ip] --port [stratum to daemonn port] --daemon-mode
+#Syntax is deroplus_windows.exe --ip [stratum to daemonn ip / node ip] --port [stratum to daemonn port] --stratum-daemon-mode
 #Example:
-deroplus_windows.exe --ip 1.2.3.4 --port 1234 --daemon-mode ;
+deroplus_windows.exe --ip 1.2.3.4 --port 1234 --stratum-daemon-mode ;
 ````
 
 ###### Linux ARM
@@ -76,9 +82,9 @@ chmod +x deroplus_arm_sha
 
 #For daemon/node
 #Go to deroplus_stratum_to_daemon usage to understand how it's working!!!
-#Syntax is ./deroplus_arm_sha --ip [stratum to daemonn ip / node ip] --port [stratum to daemonn port] --daemon-mode
+#Syntax is ./deroplus_arm_sha --ip [stratum to daemonn ip / node ip] --port [stratum to daemonn port] --stratum-daemon-mode
 #Example:
-./deroplus_arm_sha --ip 1.2.3.4 --port 1234 --daemon-mode ;
+./deroplus_arm_sha --ip 1.2.3.4 --port 1234 --stratum-daemon-mode ;
 ````
 
 ###### Dero_stratum_to_daemon
