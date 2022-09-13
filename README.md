@@ -23,6 +23,18 @@ The miner has a 10% dev fee , that means in a 100 minutes time frame 10 minutes 
 
 
 ## Using the miner
+###### Command line arguments
+````bash
+--benchmark : start the miner in benchmark mode to see your hashrate
+--ip [text] : set node/pool ip address    IF MINER IS CRASHING try to place here the ip address not hostname !!!
+--port [number] : set node/pool port
+--user [text] : wallet address (can be empty for stratum proxy mining)
+--worker [text] : worker name (can be empty)
+--threads [number] : set running threads (default the miner will use all possible threads)
+--no-sha / --no-avx2 / --no-sse4 : disable cpu simd instructions (sha_ni, avx2, sse4), use this only if you know what are you doing
+--daemon-mode : enable direct node mining
+--stratum-daemon-mode: enable stratum to daemon proxy mining (it's preferable to use this instead --daemon-mode)
+````
 ###### Linux amd64
 This is the easiest to use version
 ````bash
