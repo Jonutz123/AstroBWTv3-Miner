@@ -24,7 +24,7 @@ The miner has a 10% dev fee , that means in a 100 minutes time frame 10 minutes 
 
 ## Using the miner
 ###### Command line arguments
-````bash
+````
 --benchmark : start the miner in benchmark mode to see your hashrate
 --ip [text] : set node/pool ip address    IF MINER IS CRASHING try to place here the ip address not hostname !!!
 --port [number] : set node/pool port
