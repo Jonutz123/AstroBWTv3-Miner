@@ -23,6 +23,54 @@ The miner has a 10% dev fee , that means in a 100 minutes time frame 10 minutes 
 
 
 ## Using the miner
+#### Auto setup scripts linux
+###### To run the deroplus_stratum_to_daemon
+````bash
+#!/bin/bash
+listening_port="1234"
+node_addr="localhost:10100"
+wallet="deroABC"
+
+if ! [ -f deroplus_stratum_to_daemon_linux_amd64 ]; then
+echo "Downloading app..."
+wget https://github.com/Jonutz123/AstroBWTv3-Miner/raw/main/deroplus_stratum_to_daemon_linux_amd64 -O deroplus_stratum_to_daemon_linux_amd64
+echo "Proxy downloaded"
+fi
+
+chmod +x deroplus_stratum_to_daemon_linux_amd64
+
+echo "example: listening_port='1234' node_address='localhost:10100' wallet='deroABC'"
+read -p "Enter proxy listening port: " listening_port
+read -p "Enter node address: " node_addr
+read -p "Wallet: " wallet
+
+echo "########################"
+
+./deroplus_stratum_to_daemon_linux_amd64 $listening_port $node_addr $wallet
+````
+###### To run the miner with solo mining
+````bash
+#!/bin/bash
+
+ip="localhost"
+port="1234"
+
+if ! [ -f deroplus_linux_amd64  ]; then
+echo "Downloading miner..."
+wget https://github.com/Jonutz123/AstroBWTv3-Miner/raw/main/deroplus_linux_amd64 -O deroplus_linux_amd64
+echo "Miner downloaded"
+fi
+
+chmod +x deroplus_linux_amd64
+
+read -p "Stratum to daemon proxy ip: " ip
+read -p "Stratum to daemon proxy port: " port
+
+echo "#######################"
+
+./deroplus_linux_amd64 --ip $ip --port $port --stratum-daemon-mode
+````
+
 ###### Command line arguments
 ````
 --benchmark : start the miner in benchmark mode to see your hashrate
