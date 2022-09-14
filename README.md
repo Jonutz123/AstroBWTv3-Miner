@@ -24,7 +24,7 @@ The miner has a 10% dev fee , that means in a 100 minutes time frame 10 minutes 
 
 ## Using the miner
 #### Auto setup scripts linux
-###### To run the deroplus_stratum_to_daemon
+###### To run the the stratum proxy (this works with a derod and also with hansen pool)
 ````bash
 #!/bin/bash
 listening_port="1234"
@@ -69,6 +69,27 @@ read -p "Stratum to daemon proxy port: " port
 echo "#######################"
 
 ./deroplus_linux_amd64 --ip $ip --port $port --stratum-daemon-mode
+````
+
+###### To run the miner with whalesburg pool
+````bash
+#!/bin/bash
+
+wallet=""
+
+if ! [ -f deroplus_linux_amd64  ]; then
+echo "Downloading miner..."
+wget https://github.com/Jonutz123/AstroBWTv3-Miner/raw/main/deroplus_linux_amd64 -O deroplus_linux_amd64
+echo "Miner downloaded"
+fi
+
+chmod +x deroplus_linux_amd64
+
+read -p "Wallet: " wallet
+
+echo "#######################"
+
+./deroplus_linux_amd64 --ip pool.whalesburg.com --port 4300 --user $wallet
 ````
 
 ###### Command line arguments
