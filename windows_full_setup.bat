@@ -26,3 +26,4 @@ echo "########################"
 echo Open 2 terminals/ssh sessions and run this 2 commands in this directory !!!
 echo deroplus_stratum_to_daemon_windows.exe %listening_port% %node_addr% %wallet%
 echo deroplus_windows.exe --ip localhost --port %listening_port% --stratum-daemon-mode
+pause
