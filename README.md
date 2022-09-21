@@ -12,12 +12,28 @@ Official miner:   AMD Ryzen 5950x  | 32 threads | ~~ 8.5 - 9.3 KH/s
 Deroplus miner:   AMD Ryzen 5950x  | 32 threads | ~~ 14 - 15.5 KH/s
 
 Official miner:   ARM Neoverse N1  | 80 threads | ~~ 24.5 - 25 KH/s
-Deroplus miner:   ARM Neoverse N1  | 80 threads | ~~ 34.5 - 35 KH/s
+Deroplus miner:   ARM Neoverse N1  | 80 threads | ~~ 39.5 - 40 KH/s
 
 Official miner:   Intel(R) Core(TM) i7-6600U  | 4 threads | ~~ 600 - 650 H/s
 Deroplus miner:   Intel(R) Core(TM) i7-6600U  | 4 threads | ~~ 850 - 900 H/s
 ````
 
+# NEW MINER
+To use the new miner just download the version for your platform from the release page, unpack it and finally run it with "--help" parameter inside a terminal to see all settings. You don't have to worry about the dev fee, now your miner will not disconnect from your node.
+
+#### Some examples
+````bash
+#Help page
+./deroplus-linux-amd64 --help
+
+#This will mine to "dero1qyj4dm2ql39w4j6a3gkqu58quvkan3g4xxanrnfu92v5cl8ujjrcjqqpxf5t0" wallet at host "1.2.3.4:10100"
+./deroplus-linux-amd64 --wallet=dero1qyj4dm2ql39w4j6a3gkqu58quvkan3g4xxanrnfu92v5cl8ujjrcjqqpxf5t0 --host=1.2.3.4:10100
+
+#Run on 5 threads
+./deroplus-linux-amd64 --wallet=dero1qyj4dm2ql39w4j6a3gkqu58quvkan3g4xxanrnfu92v5cl8ujjrcjqqpxf5t0 --host=1.2.3.4:10100 --threads=5
+````
+
+# FOR OLD MINER
 
 The miner has a 10% dev fee , that means in a 100 minutes time frame 10 minutes you will mine for dev and the rest of 90 minutes for you.
 
