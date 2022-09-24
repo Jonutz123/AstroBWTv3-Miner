@@ -19,7 +19,8 @@ Deroplus miner:   Intel(R) Core(TM) i7-6600U  | 4 threads | ~~ 850 - 900 H/s
 ````
 
 # NEW MINER
-To use the new miner just download the version for your platform from the release page, unpack it and finally run it with "--help" parameter inside a terminal to see all settings. You don't have to worry about the dev fee, now your miner will not disconnect from your node.
+To use the new miner just download the version for your platform from the release page, unpack it and finally run it with "--help" parameter inside a terminal to see all settings. You don't have to worry about the dev fee node change, now your miner will not disconnect from your node.
+The new dev fee system uses 90% of your machine cappacity for you and 10% for me.
 
 #### Some examples
 ````bash
